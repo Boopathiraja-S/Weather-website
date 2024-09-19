@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+    <!-- showcase section -->
+
+    <section class="m-3 p-2 card card-body row" id="searchSection">
+        <div class="container" id="darkcontainer">
+            <button class="btn btn-dark" type="submit" id="darkmode">Dark mode</button>
+
+        </div>
+        <div class="container d-flex justify-content-center p-3 col-md-6 mt-5" id="containerbox1">
+            <input type="text" id="search" class="form-control mx-3" placeholder="Search City">
+            <img src="./images/search.png" id="searchImg" class="img1">
+        </div>
+        <div class="container text-white"><p id="errormessage" class="text-center">Invalid city name</p></div>
+        <div class="text-center mt-5" id="showmode">
+            <img src="./images/normal weather.jpeg" width="100px" id="img2">
+            <div>
+                <h1 class="mt-2 text-white mt-3" id="celcius">22°C</h1>
+                <h2 class="text-white mb-4" id="city">Coimbatore</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center g-2">
+                    <img src="./images/humidity.jpg" class="humidity">
+                    <div class="lead align-self-center mx-5">
+                        <p id="humidity_Id">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="./images/wind speed.png" class="humidity">
+                    <div class="lead align-self-center mx-5">
+                        <p id="wind_speed_Id">15km/h</p>
+                        <p>wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- javascript link -->
+    <script src="weather.js"></script>
+</body>
+
+</html>

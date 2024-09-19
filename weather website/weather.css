@@ -1,0 +1,61 @@
+#searchSection {
+    background: linear-gradient(purple, skyblue);
+    border-radius: 30px;
+}
+#darkcontainer{
+    display: flex;
+    justify-content: end;
+}
+#darkmode{
+    width: 150px;
+    border-radius: 30%;
+}
+
+#containerbox1 {
+    border-radius: 20px;
+}
+
+#searchSection .img1 {
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#img2 {
+    border-radius: 50%;
+    align-items: center;
+}
+#city {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+#celcius {
+    font-weight: bold;
+    font-size: 36px;
+}
+.humidity{
+    background: none;
+    margin-top: 20px;
+    width: 120px;
+    height: 200px;
+    border-radius: 30%;
+}
+.lead{
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+}
+#showmode{
+    display: none;
+}
+#errormessage{
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
